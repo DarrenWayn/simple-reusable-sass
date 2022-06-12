@@ -4,6 +4,39 @@ $secondary: #1ac888;
 $error: #d32752;
 $info: #f6c31c;
 
+// color palette
+$colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "error": $error,
+    "info": $info,
+    "blue": #1919e6,
+    "red": #e61919,
+    "yellow": #e6e619,
+    "green": #19e635,
+    "orange": #ffa600,
+    "purple": #9900ff,
+    "grary": #808080,
+    "black": black,
+    "white": white,
+);
+
+.test-btn {
+    background-color: map-get($colors, 'purple')
+}
+
+@debug map-get($colors, "purple");
+
+// does colors have a secondary key? is it true?
+@debug map-has-key($colors, 'secondary');
+@debug map-has-key($colors, 'tertiary');
+
+// remove value on the map
+@debug map-remove($colors, 'primary');
+
+// added new value to the map
+@debug map-merge($colors, ('pink': pink));
+
 // Spacing
 $base-padding: 0.75rem;
 $base-margin: 0.75rem;
