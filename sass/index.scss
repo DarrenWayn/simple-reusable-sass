@@ -1,21 +1,3 @@
-// variables & function
-@import 'functions';
-@import 'variables';
+$primary: indigo;
 
-// base & layout/breakpoints
-@import 'base';
-@import 'breakpoints';
-@import 'grid';
-
-// colors
-@import 'colors';
-
-// components (button, card, navbar)
-@import 'components/card';
-@import 'components/button';
-@import 'components/navbar';
-
-// utilities (margin, padding, opactiy)
-@import 'utilities';
-
-
+@import 'scss';
